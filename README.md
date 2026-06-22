@@ -53,3 +53,18 @@ Here is a pre-start checklist:
 ## Implementation
 
 ** ADD YOUR IMPLEMENTATION DOCUMENTATION HERE **
+
+### Phase 1 (Preparation):
+
+1. Forked the HiveBox Github repo and cloned it locally.
+    - Forked on Github
+    - On command line:
+        - 'git clone https://github.com/headless-user/hivebox.git'
+        - 'git checkout -b phase_1'
+2. Created Github Project @ https://github.com/users/headless-user/projects/1
+3. Got these 3 senseBox IDs from https://opensensemap.org/
+    - 689b2bdc569c2d0007586ae9 (Sarvamangalam, India)
+    - 689fffee29cb2f00079914d8 (Raghu_Lawspet, India)
+    - 68a93536e035980007f6036b (Aurovanam, India)
+4. Updated README.md
+
