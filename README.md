@@ -59,12 +59,36 @@ Here is a pre-start checklist:
 1. Forked the HiveBox Github repo and cloned it locally.
     - Forked on Github
     - On command line:
-        - 'git clone https://github.com/headless-user/hivebox.git'
-        - 'git checkout -b phase_1'
+        - `git clone https://github.com/headless-user/hivebox.git`
+        - `git checkout -b phase_1`
 2. Created Github Project @ https://github.com/users/headless-user/projects/1
 3. Got these 3 senseBox IDs from https://opensensemap.org/
     - 689b2bdc569c2d0007586ae9 (Sarvamangalam, India)
     - 689fffee29cb2f00079914d8 (Raghu_Lawspet, India)
     - 68a93536e035980007f6036b (Aurovanam, India)
 4. Updated README.md
+
+
+### Phase 2 (Basic Python function):
+
+1. Created and activated Virtual Environment:
+    - ``` python -m venv venv
+          source venv/bin/activate ```
+2. Created a python function printing the current version:
+    - ```def version_print():
+            print("current version is v0.0.1")
+
+         version_print() ```
+3. Tested locally:
+    - ` python version.py ` ---> current version is v0.0.1
+
+4. Created the follwing Dockerfile for the above app:
+    ``` FROM python:3.13-slim
+        COPY . /app
+        WORKDIR /app
+        CMD ["python","version.py"]
+    ```
+5. Built and locally executed the docker container:
+   - ``` docker build -t hivebox . 
+         docker run hivebox ```
 
